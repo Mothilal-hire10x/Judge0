@@ -31,10 +31,8 @@ unzip judge0-v1.13.1.zip
 6. Run all services and wait a few seconds until everything is initialized:
 ```
 cd judge0-v1.13.1
-docker-compose up -d db redis
-sleep 10s
 docker-compose up -d
-sleep 5s
+sleep 10s
 ```
 7. Your instance of Judge0 CE v1.13.1 is now up and running; visit docs at `http://<IP ADDRESS OF YOUR SERVER>:2358/docs`.
 
