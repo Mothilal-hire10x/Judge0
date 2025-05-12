@@ -3,8 +3,6 @@ Judge0 is an open-source online code execution system that supports multiple pro
 
 
 # v1.13.1 (2024-04-18)
-Security researcher [Daniel Cooper](https://www.linkedin.com/in/daniel-cooper4) (@stacksparrow4) found three critical vulnerabilities in Judge0 versions `<= 1.13.0`, which this release fixes. Thank you, Daniel, for your contribution.
-
 ## Security Fixes
 This release fixes the following security vulnerabilities:
 - [CVE-2024-28185](https://github.com/judge0/judge0/security/advisories/GHSA-h9g2-45c8-89cf)
