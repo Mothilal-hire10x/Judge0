@@ -40,5 +40,9 @@ sleep 5s
 
 
 # Query Execution
-```sudo docker exec -it database psql -U postgres```
-```CREATE DATABASE judge0;```
+```
+sudo docker exec -it database psql -U postgres
+```
+```
+CREATE DATABASE judge0;
+```
