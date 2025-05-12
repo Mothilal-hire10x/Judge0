@@ -3,12 +3,6 @@ Judge0 is an open-source online code execution system that supports multiple pro
 
 
 # v1.13.1 (2024-04-18)
-## Security Fixes
-This release fixes the following security vulnerabilities:
-- [CVE-2024-28185](https://github.com/judge0/judge0/security/advisories/GHSA-h9g2-45c8-89cf)
-- [CVE-2024-28189](https://github.com/judge0/judge0/security/advisories/GHSA-3xpw-36v7-2cmg)
-- [CVE-2024-29021](https://github.com/judge0/judge0/security/advisories/GHSA-q7vg-26pg-v5hr)
-
 ## Deployment Procedure
 Judge0 is collecting telemetry data to help improve the product and understand its use in various production environments. Read more about telemetry [here](https://github.com/judge0/judge0/blob/v1.13.1/TELEMETRY.md).
 
