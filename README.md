@@ -39,6 +39,6 @@ sleep 5s
 7. Your instance of Judge0 CE v1.13.1 is now up and running; visit docs at `http://<IP ADDRESS OF YOUR SERVER>:2358/docs`.
 
 
-#Query Execution
-`sudo docker exec -it database psql -U postgres`
-`CREATE DATABASE judge0;`
+# Query Execution
+```sudo docker exec -it database psql -U postgres```
+```CREATE DATABASE judge0;```
