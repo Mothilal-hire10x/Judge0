@@ -1,0 +1,51 @@
+services:
+  server:
+    image: judge0/judge0:1.13.1
+    volumes:
+      - ./judge0.conf:/judge0.conf:ro
+    ports:
+      - "2358:2358"
+    privileged: true
+    restart: always
+    networks:
+      - my_shared_network
+      - db_network
+      - code_network
+
+  workers:
+    image: judge0/judge0:1.13.1
+    command: ["./scripts/workers"]
+    volumes:
+      - ./judge0.conf:/judge0.conf:ro
+    privileged: true
+    restart: always
+    environment:
+      - ISOLATE_ROOT=/var/local/lib/isolate
+    networks:
+      - my_shared_network
+      - db_network
+      - code_network
+
+  redis:
+    image: redis:7.2.4
+    container_name: redis_judge0
+    command: ["redis-server", "--requirepass", "123456"]
+    env_file: judge0.conf
+    restart: always
+    networks:
+      - code_network
+
+
+networks:
+  my_shared_network:
+    external: true
+    name: my_shared_network
+
+  db_network:
+    driver: bridge
+    external: true
+
+  code_network:
+    driver: bridge
+    external: true
+    name: code_network
